@@ -5,7 +5,9 @@
   "main": "./src/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start" : "node src/app.js"
+    "start": "node src/app.js",
+    "client" : "cd client && yarn start",
+    "dev" : "concurrently \"yarn start\" \"yarn client\" "
   },
   "author": "milan",
   "license": "ISC",
@@ -13,6 +15,7 @@
     "node": "8.11.4"
   },
   "dependencies": {
+    "concurrently": "^4.0.1",
     "graphql-yoga": "^1.16.2",
     "mongoose": "^5.2.16"
   }
