@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/app.js",
     "client" : "cd client && yarn start",
-    "dev" : "concurrently \"yarn start\" \"yarn client\" "
+    "dev" : "concurrently \"yarn start\" \"yarn client\" ",
+    "app-install" : "yarn install && cd client && yarn install"
   },
   "author": "milan",
   "license": "ISC",
