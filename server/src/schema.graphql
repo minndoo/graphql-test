@@ -1,0 +1,18 @@
+type Query {
+  info: String,
+  categories : [Category],
+  category(name : String) : Category,
+  jokes : [Joke],
+  joke (id : ID) : Joke,
+}
+
+type Category {
+  name : String,
+  jokes : [Joke]
+}
+
+type Joke {
+  id : ID,
+  category : [Category],
+  value : String,
+}
